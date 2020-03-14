@@ -1,26 +1,42 @@
-# Express Boilerplate!
+# Adopt A Pet
+## Written by Blade Boles and Jaye Laguardia
 
-This is a boilerplate project used for starting new projects!
+### About
+The user can enter their name to get in line to adopt a pet. The choice of pets shown is in order of when the shelter received them. The user can only adopt when it is their turn. The user may also adopt as many pets as they desire.  This is the server repo for this app.
 
-## Set up
+### Live App
+[Adopt A Pet](https://build-theta-ecru.now.sh)
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+### Tech Stacks
+- Node
+- Javascript
+- Express
+- Heroku
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+### API Endpoints
 
-## Scripts
+* /people 
+  * get - Returns list of current people in line 
+  * post - Adds a new customer to the back of the line
+  * delete - Removes the customer in the front of the line
+* /pets
+   * /api/cat
+      * get - Returns list of all cats in shelter
+      * delete - Dequeues kitty at the front of the line
+   * /api/dog
+      * get - Returns list of all dogs in shelter
+      * delete -  Dequeues puppy at the front of the line
 
-Start the application `npm start`
 
-Start nodemon for the application `npm run dev`
+## Available Scripts
 
-Run the tests `npm test`
+In the project directory, you can run:
 
-## Deploying
+### `npm run dev`
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+Runs the server in development mode<br />
+Locally server will be [http://localhost:8000](http://localhost:8000) when launched.
+
+
+
+
