@@ -41,19 +41,19 @@ class Queue {
 
   show() {
     // Return the next item in the queue.
-    return this.first
+    return this.first;
   }
 
   all() {
     // Return all items in the queue.
-    let qArray = []
-    let current = this.first
+    let qArray = [];
+    let current = this.first;
     while (current !== null) {
-      qArray.push(current.data)
-      current = current.next
+      qArray.push(current.data);
+      current = current.next;
     }
-    return qArray
+    return qArray;
   }
 }
 
-module.exports = Queue
+module.exports = Queue;

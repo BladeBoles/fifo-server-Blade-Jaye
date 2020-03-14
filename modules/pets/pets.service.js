@@ -1,5 +1,5 @@
-const Queue = require('../queue/Queue')
-const store = require('../../store')
+const Queue = require('../queue/Queue');
+const store = require('../../store');
 
 // Set up initial data.
 // --------------------
@@ -7,10 +7,10 @@ const store = require('../../store')
 const pets = {
   cats: new Queue(),
   dogs: new Queue()
-}
+};
 
-store.cats.forEach(cat => pets.cats.enqueue(cat))
-store.dogs.forEach(dog => pets.dogs.enqueue(dog))
+store.cats.forEach(cat => pets.cats.enqueue(cat));
+store.dogs.forEach(dog => pets.dogs.enqueue(dog));
 
 // --------------------
 
@@ -27,13 +27,13 @@ const Pets = {
 
   dequeueCat(type) {
     // Remove a cat from the queue.
-    pets.cats.dequeue()
+    pets.cats.dequeue();
   },
 
   dequeueDog(type) {
     // Remove a dog from the queue.
-    pets.dogs.dequeue()
+    pets.dogs.dequeue();
   }
 
-}
-module.exports = Pets
+};
+module.exports = Pets;
