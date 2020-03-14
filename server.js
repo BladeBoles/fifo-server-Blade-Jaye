@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-const app = require('./app');
-const { PORT } = require('./config');
+const app = require('./modules/app/app.js');
+const { PORT } = require('./modules/config');
 
 
 app.listen(PORT, () => {
